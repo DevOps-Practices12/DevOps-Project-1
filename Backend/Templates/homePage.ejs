@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%=title%></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-black flex justify-center items-center flex-col gap-y-10">
+    <h1 class="text-white text-4xl text-center font-bold uppercase mt-3">
+      ✨Welcome to <span class="text-purple-400"><%=title %></span>✨
+    </h1>
+    <button
+      id="logOutBtn"
+      class="text-xl text-white uppercase border-2 py-2 px-10 rounded-md hover:bg-purple-400 transition-all duration-300 ease-in-out active:translate-y-1"
+    >
+      Log out
+    </button>
+  </body>
+  <script>
+    document.getElementById("logOutBtn").addEventListener("click", function () {
+      alert("Clicked OK");
+    });
+  </script>
+</html>
